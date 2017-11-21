@@ -11,7 +11,14 @@ function bookSearch() {
 
 			var results = document.getElementById("results")
 			for(i=0; i < data.items.length; i++) {
-				results.innerHTML += '<h2>' + data.items[i].volumeInfo.title + '</h2>' + '<h3>' + data.items[i].volumeInfo.authors + '</h3>' + data.items[i].volumeInfo.maturityRating
+				results.innerHTML += '<h2>' + data.items[i].volumeInfo.title + 
+				'</h2>' + 
+				'<h3>' + 
+				data.items[i].volumeInfo.authors + 
+				'</h3>' + 
+				data.items[i].volumeInfo.maturityRating +
+				'<p>'
+
 			}
 		},
 
